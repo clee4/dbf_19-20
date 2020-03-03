@@ -1,0 +1,238 @@
+EESchema Schematic File Version 4
+LIBS:datalogger-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0104
+U 1 1 5E5B86C1
+P 3400 950
+F 0 "#PWR0104" H 3400 800 50  0001 C CNN
+F 1 "+5V" H 3415 1123 50  0000 C CNN
+F 2 "" H 3400 950 50  0001 C CNN
+F 3 "" H 3400 950 50  0001 C CNN
+	1    3400 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1050 3400 950 
+Wire Wire Line
+	3250 3050 3300 3050
+Connection ~ 3250 3050
+Wire Wire Line
+	3250 3050 3250 3250
+Wire Wire Line
+	3200 3050 3250 3050
+Text Label 2450 2450 2    50   ~ 0
+D13
+Text Label 2450 2550 2    50   ~ 0
+D12
+Text Label 2450 2650 2    50   ~ 0
+D11
+Text Label 2450 2750 2    50   ~ 0
+D10
+Wire Wire Line
+	1200 2350 1450 2350
+Wire Wire Line
+	1200 2250 1450 2250
+Wire Wire Line
+	1200 2150 1450 2150
+Wire Wire Line
+	1200 2050 1450 2050
+Text Label 1200 2050 2    50   ~ 0
+D13
+Text Label 1200 2150 2    50   ~ 0
+D12
+Text Label 1200 2250 2    50   ~ 0
+D11
+Text Label 1200 2350 2    50   ~ 0
+D10
+Wire Wire Line
+	1350 2450 1350 2550
+Wire Wire Line
+	1450 2450 1350 2450
+Wire Wire Line
+	1350 1850 1350 1950
+Wire Wire Line
+	1450 1950 1350 1950
+$Comp
+L dbf:SD_Module SDModule
+U 1 1 5E5AB333
+P 1450 2050
+F 0 "SDModule" H 1628 1946 50  0000 L CNN
+F 1 "SD_Module" H 1628 1855 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1750 2200 50  0001 C CNN
+F 3 "" H 1750 2200 50  0001 C CNN
+	1    1450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E59F721
+P 3250 3250
+F 0 "#PWR0103" H 3250 3000 50  0001 C CNN
+F 1 "GND" H 3255 3077 50  0000 C CNN
+F 2 "" H 3250 3250 50  0001 C CNN
+F 3 "" H 3250 3250 50  0001 C CNN
+	1    3250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2750 2700 2750
+$Comp
+L power:+5V #PWR0102
+U 1 1 5E59D7BB
+P 1350 1850
+F 0 "#PWR0102" H 1350 1700 50  0001 C CNN
+F 1 "+5V" H 1365 2023 50  0000 C CNN
+F 2 "" H 1350 1850 50  0001 C CNN
+F 3 "" H 1350 1850 50  0001 C CNN
+	1    1350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E59C53B
+P 1350 2550
+F 0 "#PWR0101" H 1350 2300 50  0001 C CNN
+F 1 "GND" H 1355 2377 50  0000 C CNN
+F 2 "" H 1350 2550 50  0001 C CNN
+F 3 "" H 1350 2550 50  0001 C CNN
+	1    1350 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2650 2700 2650
+Wire Wire Line
+	2450 2550 2700 2550
+Wire Wire Line
+	2450 2450 2700 2450
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5E572AA7
+P 3200 2050
+F 0 "A1" V 3200 2050 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" V 3100 2050 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 3350 1100 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3200 1050 50  0001 C CNN
+	1    3200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E5DFF1A
+P 1100 3450
+F 0 "#PWR0105" H 1100 3200 50  0001 C CNN
+F 1 "GND" H 1105 3277 50  0000 C CNN
+F 2 "" H 1100 3450 50  0001 C CNN
+F 3 "" H 1100 3450 50  0001 C CNN
+	1    1100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5E5E0463
+P 1100 3000
+F 0 "#PWR0106" H 1100 2850 50  0001 C CNN
+F 1 "+5V" H 1115 3173 50  0000 C CNN
+F 2 "" H 1100 3000 50  0001 C CNN
+F 3 "" H 1100 3000 50  0001 C CNN
+	1    1100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 3150 1100 3150
+Wire Wire Line
+	1100 3150 1100 3000
+Wire Wire Line
+	1200 3350 1100 3350
+Wire Wire Line
+	1100 3350 1100 3450
+Text Label 900  3250 2    50   ~ 0
+p
+Wire Wire Line
+	1200 3250 900  3250
+$Comp
+L dbf:HX711 StrainGauge1
+U 1 1 5E5FA142
+P 1250 850
+F 0 "StrainGauge1" H 1568 661 50  0000 L CNN
+F 1 "HX711" H 1568 570 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1250 850 50  0001 C CNN
+F 3 "" H 1250 850 50  0001 C CNN
+	1    1250 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E5FAEAA
+P 1100 1400
+F 0 "#PWR0107" H 1100 1150 50  0001 C CNN
+F 1 "GND" H 1105 1227 50  0000 C CNN
+F 2 "" H 1100 1400 50  0001 C CNN
+F 3 "" H 1100 1400 50  0001 C CNN
+	1    1100 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1250 1100 1250
+Wire Wire Line
+	1100 1250 1100 1400
+$Comp
+L power:+5V #PWR0108
+U 1 1 5E5FBE7F
+P 1100 850
+F 0 "#PWR0108" H 1100 700 50  0001 C CNN
+F 1 "+5V" H 1115 1023 50  0000 C CNN
+F 2 "" H 1100 850 50  0001 C CNN
+F 3 "" H 1100 850 50  0001 C CNN
+	1    1100 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 950  1100 950 
+Wire Wire Line
+	1100 950  1100 850 
+Text Label 950  1050 2    50   ~ 0
+D8
+Text Label 950  1150 2    50   ~ 0
+D9
+Wire Wire Line
+	950  1050 1200 1050
+Wire Wire Line
+	1200 1150 950  1150
+$Comp
+L dbf:Pitot PitotSensor1
+U 1 1 5E6112BE
+P 1300 3000
+F 0 "PitotSensor1" H 1719 2811 50  0000 L CNN
+F 1 "Pitot" H 1719 2720 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 3000 50  0001 C CNN
+F 3 "" H 1300 3000 50  0001 C CNN
+	1    1300 3000
+	1    0    0    -1  
+$EndComp
+Text Label 2450 2250 2    50   ~ 0
+D8
+Text Label 2450 2350 2    50   ~ 0
+D9
+Wire Wire Line
+	2450 2250 2700 2250
+Wire Wire Line
+	2450 2350 2700 2350
+Text Label 4000 2150 0    50   ~ 0
+p
+Wire Wire Line
+	3700 2150 4000 2150
+$EndSCHEMATC
